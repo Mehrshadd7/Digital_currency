@@ -210,15 +210,15 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
 
 @media (min-width : 120px) and (max-width : 640px){
     div.main{
-        width: 60%;
+        width: 86%;
         overflow-y: scroll;
         height: auto;
         padding-bottom: 50px;
         background-color: white;
         border-radius: 30px;
         position: relative;
-        left: 20%;
-        top: 200px;
+        left: 7%;
+        top: 150px;
         /* text-align: center; ??? */ 
         box-shadow: 0px 0px 5px 10px #d1e2cc;
     }
