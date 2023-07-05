@@ -216,7 +216,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
         background-color: white;
         border-radius: 30px;
         position: relative;
-        left: 0;
+        left: 5%;
         top: 150px;
         /* text-align: center; ??? */ 
         box-shadow: 0px 0px 5px 10px #d1e2cc;
