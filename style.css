@@ -208,17 +208,17 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     animation: fadeIn 1s ease;
   }
 
-@media (min-width : 120px) and (max-width : 1040px){
+@media (min-width : 120px) and (max-width : 640px){
     div.main{
-        width: 50%;
+        width: 60%;
         overflow-y: scroll;
         height: auto;
         padding-bottom: 50px;
         background-color: white;
         border-radius: 30px;
         position: relative;
-        left: 25%;
-        top: 150px;
+        left: 20%;
+        top: 200px;
         /* text-align: center; ??? */ 
         box-shadow: 0px 0px 5px 10px #d1e2cc;
     }
@@ -263,7 +263,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     }
 }
 
-@media (min-width: 1041px) and (max-width : 1207px) {
+@media (min-width: 641px) and (max-width : 1007px) {
 
     body{
         background-color: rgb(3 22 51);
