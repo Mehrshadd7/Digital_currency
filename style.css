@@ -2,7 +2,7 @@
 @font-face {
     font-family: vazir-ennum;
     src: url(fonts/vazir-font-v29.1.0/Vazir-Black.eot);
-    src: url(fonts/vazir-font-v29.1.0/Farsi-Digits/Vazir-Black-FD.ttf);
+    src: url(fonts/vazir-font-v29.1.0/Farsi-Digits/Vazir-Black-FD.woff);
 }
 body{
     background-color: rgb(3 22 51);
