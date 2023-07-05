@@ -208,7 +208,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     animation: fadeIn 1s ease;
   }
 
-@media (min-width : 120px) and (max-width : 940px){
+@media (min-width : 120px) and (max-width : 1040px){
     div.main{
         width: 50%;
         overflow-y: scroll;
@@ -263,7 +263,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     }
 }
 
-@media (min-width: 941px) and (max-width : 1007px) {
+@media (min-width: 1041px) and (max-width : 1207px) {
 
     body{
         background-color: rgb(3 22 51);
@@ -310,7 +310,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
         left: 4%;
     }
 }
-@media screen and (min-width : 1008px) and (max-width:2000px) {
+@media screen and (min-width : 1208px) and (max-width:2200px) {
 
     body{
         background-color: rgb(3 22 51);
