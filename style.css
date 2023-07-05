@@ -208,7 +208,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     animation: fadeIn 1s ease;
   }
 
-@media (min-width : 120px) and (max-width : 840px){
+@media (min-width : 120px) and (max-width : 940px){
     div.main{
         width: 70%;
         overflow-y: scroll;
@@ -263,7 +263,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     }
 }
 
-@media (min-width: 841px) and (max-width : 1007px) {
+@media (min-width: 941px) and (max-width : 1007px) {
 
     body{
         background-color: #282a28;
