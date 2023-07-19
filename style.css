@@ -220,10 +220,12 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     .container {
 		flex-wrap: wrap;
 	}
-	
+	.container h1{
+        margin: 5px 0;
+    }
 	nav {
 		display: block;
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 	
 	nav li {
@@ -291,6 +293,9 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
 }
 
 @media (min-width: 641px) and (max-width : 1007px) {
+    .container h1{
+        margin: 0;
+    }
 
     .container {
 		flex-wrap: wrap;
@@ -298,7 +303,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
 	
 	nav {
 		display: block;
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 	
 	nav li {
