@@ -6,6 +6,52 @@
 }
 body{
     background-color: rgb(3 22 51);
+    margin: 0;
+}
+header {
+    margin: 0;
+	background-color: #1E3A5F;
+	padding: 20px;
+	color: #fff;
+    box-shadow: 0px 0px 20px 3px black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style-type: none;
+}
+
+nav li {
+	margin: 0 15px;
+    padding: 5px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+    padding: 10px;
+}
+
+nav li:hover {
+    background-color: #f1c40f;
+}
+nav a:hover {
+	color: #1E3A5F;
 }
 div.main{
     width: 80%;
@@ -96,44 +142,6 @@ tr.header-row th{
     margin: auto;
 
 }
-/* header.page-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #42576d; 
-}
-ul.ul-header li{
-    list-style-type: none;
-    margin-right: 30px;
-    float: right;
-    background-color: #243e48;
-    border-radius: 10px;
-    padding: 10px;
-}
-ul li a{
-    text-decoration: none;
-    color: aliceblue;
-} */
-
-/* div.arz-coin-details__quick-info{
-    background-color: rgb(33, 38, 199);
-    width: 200px; عرض sidebar
-    background-color: #f1f1f1; رنگ پس‌زمینه sidebar
-    float: left; تراز کردن sidebar به سمت چپ
-    padding: 20px; فاصله دادن به محتوای داخل sidebar از لبه‌های آن
-    box-sizing: border-box; در نظر گرفتن border و padding در محاسبه عرض و ارتفاع
-    display: none;
-}
-table.arz-coin-general-info-table{
-    position: relative;
-    width: 200px; عرض sidebar
-    background-color: #13d3c0; رنگ پس‌زمینه sidebar
-    float: left; تراز کردن sidebar به سمت چپ
-    padding: 20px; فاصله دادن به محتوای داخل sidebar از لبه‌های آن
-    box-sizing: border-box; در نظر گرفتن border و padding در محاسبه عرض و ارتفاع
-} */
 table.details , table.details tr th{
     width: 100%;
 }
@@ -209,6 +217,24 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
   }
 
 @media (min-width : 120px) and (max-width : 640px){
+    .container {
+		flex-wrap: wrap;
+	}
+	
+	nav {
+		display: block;
+		margin-top: 20px;
+	}
+	
+	nav li {
+		margin: 10px 0;
+        padding: 0;
+	}
+	
+	nav a {
+		font-size: 16px;
+	}
+
     div.main{
         width: 90%;
         overflow-y: scroll;
@@ -265,6 +291,23 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
 }
 
 @media (min-width: 641px) and (max-width : 1007px) {
+
+    .container {
+		flex-wrap: wrap;
+	}
+	
+	nav {
+		display: block;
+		margin-top: 20px;
+	}
+	
+	nav li {
+		margin: 10px 0;
+	}
+	
+	nav a {
+		font-size: 16px;
+	}
 
     body{
         background-color: rgb(3 22 51);
