@@ -1,12 +1,19 @@
-
+*{
+    box-sizing: border-box;
+}
 @font-face {
     font-family: vazir-ennum;
     src: url(fonts/vazir-font-v29.1.0/Vazir-Black.eot);
     src: url(fonts/vazir-font-v29.1.0/Farsi-Digits/Vazir-Black-FD.woff);
 }
 body{
-    background-color: rgb(3 22 51);
     margin: 0;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-color: rgb(3 22 51 / 87%);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-attachment: fixed;
 }
 header {
     margin: 0;
@@ -19,7 +26,7 @@ header {
     z-index: 2;
 }
 
-.container {
+.header-container {
 	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
@@ -47,17 +54,45 @@ nav a {
     padding: 10px;
 }
 
-nav li:hover {
-    background-color: #f1c40f;
+nav li:hover{
+    background-color: #ffc000;
+    box-shadow: 0px 0px 6px 1px #ffc906d6;
 }
-nav a:hover {
+nav a:hover , nav li:hover{
 	color: #1E3A5F;
+}
+
+nav ul li.has-dropdown:hover > .dropdown {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+nav ul li.has-dropdown ul.dropdown:hover > .dropdown{
+    display: block;
+}
+.dropdown-li {
+    display: inline-block;
+}
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 67px;
+    left: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1E3A5F;
+    width: 98.7%;
+    text-align: center;
+}
+ul.dropdown div{
+    margin: 0;
+    padding-top: 10px;
+    border-top: solid 1px #ffffff;
 }
 div.main{
     width: 80%;
     height: auto;
     padding-bottom: 50px;
-    background-color: white;
+    background-color: #fffffff0;
     border-radius: 30px;
     position: relative;
     left: 10%;
@@ -216,11 +251,102 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     animation: fadeIn 1s ease;
   }
 
+  .about-we-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    /* background-color: red; */
+    margin-bottom: 20px;
+  }
+  .about-we{
+    box-sizing: border-box;
+    width: 30%;
+    height: 85%;
+    padding: 20px 48px;
+    background-color: #2000ff73;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 7px 5px #000000, 0 0 20px 8px #ffffff;
+}
+
+  .about-we p {
+    text-align: justify;
+  }
+
+  footer {
+    background-color: #22313f;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 16px;
+    box-shadow: 0px -4px 20px 4px #000000;
+  }
+  .footer-container{
+    text-align: center;
+  }
+  
+  footer h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li i {
+    margin-right: 15px;
+    color: #f5a623;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 767px) {
+    footer {
+      text-align: center;
+    }
+    
+    footer h3 {
+      margin-top: 50px;
+    }
+    
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
+    }
+    
+    .contact-info li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
 @media (min-width : 120px) and (max-width : 640px){
-    .container {
+    
+    .header-container {
 		flex-wrap: wrap;
 	}
-	.container h1{
+	.header-container h1{
         margin: 5px 0;
     }
 	nav {
@@ -236,12 +362,22 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
 	nav a {
 		font-size: 16px;
 	}
+    
+
+    ul.dropdown div{
+        margin: 0;
+        padding-top: 10px;
+        border-top: solid 1px #ffffff;
+    }
 
     div.main{
         width: 90%;
         overflow-y: scroll;
         height: auto;
-        background-color: white;
+        background-image: url('images/bg.jpg');
+        background-size: cover;
+        background-color: #ffffffc4;
+        background-blend-mode: color;
         border-radius: 30px;
         position: relative;
         left: 5%;
@@ -290,14 +426,63 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     tr.details-row:hover{
         background-color: unset;
     }
+    .about-we{
+        width: 15%;
+        height: 48px;
+        
+    }
+    .about-we p {
+        font-size: 10px;
+        line-height: 23px;
+    }
+
+    .about-we-container {
+        height: 400px;
+        padding: 20px;
+      }
+    
+      .about-we {
+        box-sizing: border-box;
+        width: 93%;
+        height: 70%;
+        padding: 24px 28px;
+        line-height: 20px;
+        margin: 0 auto;
+      }
+}
+@media (min-width : 120px) and (max-width : 592px){
+    nav ul li ul.dropdown {
+        display: none;
+        position: absolute;
+        top: 87px;
+        left: 0px;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #1E3A5F;
+        width: 98.7%;
+        text-align: center;
+    }
+}
+@media (min-width:593) and (max-width: 640px){
+    nav ul li ul.dropdown {
+        display: none;
+        position: absolute;
+        top: 77px;
+        left: 0px;
+        margin-top: 0px;
+        padding: 10px;
+        background-color: #1E3A5F;
+        width: 98.7%;
+        text-align: center;
+    }
 }
 
 @media (min-width: 641px) and (max-width : 1007px) {
-    .container h1{
+    .header-container h1{
         margin: 0;
     }
 
-    .container {
+    .header-container {
 		flex-wrap: wrap;
 	}
 	
@@ -314,15 +499,15 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
 		font-size: 16px;
 	}
 
-    body{
-        background-color: rgb(3 22 51);
-    }
     div.main{
         width: 70%;
         overflow-y: scroll;
         height: auto;
         padding-bottom: 50px;
-        background-color: white;
+        background-image: url('images/bg.jpg');
+        background-size: cover;
+        background-color: #ffffffc4;
+        background-blend-mode: color;
         border-radius: 30px;
         position: relative;
         left: 15%;
@@ -359,7 +544,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
         left: 4%;
     }
 }
-@media screen and (min-width : 1208px) and (max-width:2200px) {
+/* @media screen and (min-width : 1208px) and (max-width:2200px) {
 
     body{
         background-color: rgb(3 22 51);
@@ -374,8 +559,6 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
         position: relative;
         left: 10%;
         top: 250px;
-        /* text-align: center; ??? */ 
-        /* box-shadow: 0px 0px 5px 10px #d1e2cc; */
     }
     table.currency_table{
         width: 90%;
@@ -383,4 +566,4 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
         margin-top: 35px;
         text-align: center;
     }
-}
+} */
