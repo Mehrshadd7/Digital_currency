@@ -6,22 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>نرخ ارز دیجیتال</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>   
+        li.dropdown-li a .fa-whatsapp:hover{
+            color: rgb(26, 230, 26);
+        }
+        li.dropdown-li a .fa-telegram:hover{
+            color: rgb(13, 128, 216);
+        }
+        li.dropdown-li a .fa-twitter-square:hover{
+            color: rgb(13, 128, 216);
+        }
+        li.dropdown-li a .fa-instagram:hover{
+            color: blueviolet;
+        }
+        li.dropdown-li a .fa {
+            color: aliceblue;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        ul.contact-dropdown li.dropdown-li:hover{
+            background-color: unset;
+            box-shadow: none;
+        }
     </style>
 </head> 
 <body>
 
   
 <header>
-    <div class="container">
+    <div class="header-container">
         <h1>digital currencies</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><i class="fa fa-angle-down" style="font-size: 17px"></i><a href="#">Home</a></li>
+                <li class="has-dropdown"><i class="fa fa-angle-down"></i><a href="#">About</a>
+                    <ul class="dropdown">
+                        <div>
+                            
+                            <li class="dropdown-li"> <a href="#">History </a>  </li>
+                            <li class="dropdown-li"> <a href="#">Our Team</a>  </li>
+                            <li class="dropdown-li"> <a href="#">Business Partners</a>  </li>
+                            <li class="dropdown-li"> <a href="#">Contact Us</a>  </li>
+                        </div>    
+                    </ul>
+                </li>
+                
+                <li class="has-dropdown"><i class="fa fa-angle-down"></i><a href="#">Services</a>
+                    <ul class="dropdown">
+                        <div>
+                            
+                            <li class="dropdown-li"><a href="#">bitcoin</a></li>
+                            <li class="dropdown-li"> <a href="#">ethereum</a>  </li>
+                            <li class="dropdown-li"> <a href="#">tether</a>  </li>
+                            <li class="dropdown-li"> <a href="#">BNB</a>  </li>
+                            <li class="dropdown-li"> <a href="#">usd-coin</a>  </li>
+                            <li class="dropdown-li"> <a href="#">xrp</a>  </li>
+                            <li class="dropdown-li"> <a href="#">shiba-inu</a>  </li>
+                        </div>    
+                    </ul>
+                </li>
+
+                <li class="has-dropdown"><i class="fa fa-angle-down"></i><a href="#">Contact</a>
+                    <ul class="dropdown contact-dropdown">
+                        <div>
+                            
+                            <li class="dropdown-li"><a href="#"><i class='fa fa-instagram'></i></a></li>
+                            <li class="dropdown-li"><a href="#"><i class="fa fa-twitter-square"></i></a>  </li>
+                            <li class="dropdown-li"> <a href="#"><i class="fa fa-telegram"></i></a>  </li>
+                            <li class="dropdown-li"> <a href="#"><i class="fa fa-phone"></i></a>  </li>
+                            <li class="dropdown-li"> <a href="#"><i class="fa fa-whatsapp"></i></a>  </li>
+                        </div>     
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
@@ -39,7 +97,7 @@
             <th>Weekly chart</th>
             <th class="th-details">details</th>
         </tr>
-        <tr class="body-row bitcoin-row D-currency-displayed-row">
+        <tr class="body-row bitcoin-row D-currency-displayed-row" id="bitcoin-row">
              <!-- 1 --><td class="td-number">1</td>
              <!-- 2 --><td class="td-digital-currency-image"><img src="images/bitcoin.png" alt="bitcoin.png"></td>
              <!-- 3 --><td class="td-digital-currency-name td-digital-currency-info">bitcoin</td>
@@ -89,7 +147,7 @@
             </td>
         </tr>
     
-        <tr class="body-row ethereum-row D-currency-displayed-row">
+        <tr class="body-row ethereum-row D-currency-displayed-row" id="ethereum-row">
             <!-- 1 --><td class="td-number">2</td>
             <!-- 2 --><td class="td-digital-currency-image"><img src="images/ethereum.png" alt="ethereum.png"></td>
             <!-- 3 --><td class="td-digital-currency-name td-digital-currency-info">ethereum</td>
@@ -205,7 +263,39 @@
         <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, corporis.</p>
         <img src="images/bitcoin.png" alt=""> -->
     </div>
+
+        <div class="about-we-container">
+            <div class="about-we">
+                <h3 style="margin-bottom: 0px;">About Us</h3>
+                <p>We are a digital currency exchange website designed with the goal of providing high-quality and secure services to our customers. Our platform is designed to be easy to use and fast, and we offer a wide range of features to help you buy, sell, and store digital currencies.</p>
+            </div>  
+        </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="">
+            <div class="">
+              <h3>Services</h3>
+              <ul>
+                <li>Digital currency exchange</li>
+                <li>Global money transfers</li>
+                <li>Digital wallet</li>
+                <li>Trading with digital coins</li>
+              </ul>
+            </div><hr>
+            <div class="">
+              <h3>Contact Us</h3>
+              <ul class="contact-info">
+                <li><i class="fa fa-map-marker"></i>123 Main Street, New York, code 10001</li>
+                <li><i class="fa fa-phone"></i><a href="tel:+1-555-555-5555">+1 (777) 777-7777</a></li>
+                <li><i class="fa fa-envelope"></i><a href="mailto:info@digitalcurrency.com">info@digitalcurrency.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
    
     <script src="js_code.js"></script>
+    
 </body>
 </html>
