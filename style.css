@@ -433,7 +433,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     }
     .about-we p {
         font-size: 10px;
-        line-height: 23px;
+        line-height: 26px;
     }
 
     .about-we-container {
@@ -443,8 +443,8 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     
       .about-we {
         box-sizing: border-box;
-        width: 93%;
-        height: 70%;
+        width: 87%;
+        height: 80%;
         padding: 24px 28px;
         line-height: 20px;
         margin: 0 auto;
