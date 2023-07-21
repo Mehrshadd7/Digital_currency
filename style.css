@@ -338,7 +338,7 @@ tr.bitcoin-details-row:hover td , tr.ethereum-details-row:hover td{
     
     .contact-info li {
       display: inline-block;
-      margin: 0 10px;
+      margin: 6px 10px;
     }
   }
 @media (min-width : 120px) and (max-width : 640px){
